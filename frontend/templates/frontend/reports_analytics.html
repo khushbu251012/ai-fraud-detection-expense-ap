@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reports & Analytics</title>
+  <link rel="stylesheet" href="{% static 'frontend/css/reports_analytics.css' %}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="report-container">
+    <h1>Reports & Analytics</h1>
+
+    <div class="charts">
+      <div class="chart-box">
+        <h2>Pie chart by category</h2>
+        <canvas id="categoryChart"></canvas>
+      </div>
+
+      <div class="chart-box">
+        <h2>Monthly Spending</h2>
+        <canvas id="trendChart"></canvas>
+      </div>
+    </div>
+
+    <button id="download-report">Download Report (PDF)</button>
+  </div>
+
+  <script src="{% static 'frontend/js/reports_analytics.js' %}"></script>
+</body>
+</html>

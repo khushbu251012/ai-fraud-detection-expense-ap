@@ -1,0 +1,92 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #c1dcf0;
+  padding: 40px;
+}
+
+.expense-container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #27ae60;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #219150;
+}
+
+#expense-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.expense-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  text-align: left;
+  position: relative;
+}
+
+.expense-card h3 {
+  color: #34495e;
+  margin: 0;
+}
+
+.expense-card p {
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.card-buttons {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.card-buttons button {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.card-buttons button.edit-btn {
+  background-color: #3498db;
+}

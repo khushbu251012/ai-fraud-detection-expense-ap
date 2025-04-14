@@ -1,0 +1,63 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #c1dcf0;
+    padding: 40px;
+  }
+  
+  .fraud-container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input, button {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #8e44ad;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #732d91;
+  }
+  
+  .result-box {
+    margin-top: 30px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    display: none;
+  }
+  
+  .result-box.safe {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .result-box.fraud {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  

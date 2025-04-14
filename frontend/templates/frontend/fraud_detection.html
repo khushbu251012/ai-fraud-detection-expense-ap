@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fraud Detection</title>
+  <link rel="stylesheet" href="{% static 'frontend/css/fraud_detection.css' %}">
+</head>
+<body>
+  <div class="fraud-container">
+    <h1>AI-Powered Fraud Detection</h1>
+
+    <h2> Your Expense History with Fraud Analysis</h2>
+    <table border="1" width="100%">
+      <thead>
+        <tr>
+          <th>Amount</th>
+          <th>Category</th>
+          <th>Description</th>
+          <th>Fraud Status</th>
+        </tr>
+      </thead>
+      <tbody id="expenseList">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="{% static 'frontend/js/fraud_detection.js' %}"></script>
+</body>
+</html>

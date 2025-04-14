@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Budget & Insights</title>
+  <link rel="stylesheet" href="{% static 'frontend/css/budget_insights.css' %}">
+</head>
+<body>
+  <div class="budget-container">
+    <h1>Set Budget by Category</h1>
+
+    <form id="budget-form">
+      <input type="text" id="category" placeholder="Category (e.g., Groceries)" required>
+      <input type="number" id="amount" placeholder="Budget Amount (₹)" required>
+      <input type="date" id="start-date" required>
+      <input type="date" id="end-date" required>
+      <button type="submit">Save Budget</button>
+    </form>
+
+    <div id="budgetList" class="mt-4"></div>
+    <br>
+    <div id="budget-summary" class="mt-4"></div>
+  </div>
+
+  <script src="{% static 'frontend/js/budget_insights.js' %}"></script>
+</body>
+</html>

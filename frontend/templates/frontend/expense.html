@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="{% static 'frontend/css/expense.css' %}">
+</head>
+<body>
+  <div class="expense-container">
+    <h1>Track Your Expenses</h1>
+
+    <form id="expense-form">
+        <input type="number" id="amount" placeholder="Amount" required >
+        <input type="text" placeholder="Category" required id="category">
+        <input type="date" placeholder="Date" required id="date">
+        <input type="text" placeholder="Description" required id="description">
+        <button id="add-btn" type="submit">Add Expense</button>
+    </form>
+
+    <h2>Your Expenses List</h2>
+    <div id="expense-list">
+      <!-- Expense cards will be injected here -->
+    </div>
+  </div>
+
+  <script src="{% static 'frontend/js/expense.js' %}"></script>
+</body>
+</html>

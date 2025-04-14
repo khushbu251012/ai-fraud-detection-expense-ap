@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="{% static 'frontend/css/dashboard.css' %}">
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1>Welcome Again!</h1>
+    <p>Smart, Secure & AI-Driven Expense Management</p>
+
+    <div class="card-container">
+      <div class="card">
+        <h2>Expense Tracking</h2>
+        <p>Add, edit & categorize your expenses easily.</p>
+        <a href="{% url 'expense' %}">Open</a>
+      </div>
+
+      <div class="card">
+        <h2>Fraud Detection</h2>
+        <p>AI flags suspicious transactions & alerts you.</p>
+        <a href="{% url 'fraud_detection' %}">Open</a>
+      </div>
+
+      <div class="card">
+        <h2>Budget & Insights</h2>
+        <p>Set limits and get AI-driven suggestions.</p>
+        <a href="{% url 'budget_insights' %}">Open</a>
+      </div>
+
+      <div class="card">
+        <h2>Reports & Analytics</h2>
+        <p>Visualize trends & download reports.</p>
+        <a href="{% url 'reports_analytics' %}">Open</a>
+      </div>
+      
+      <button onclick="logoutUser()" class="logout-btn">Logout</button>
+    </div>
+  </div>
+  <script src="{% static 'frontend/js/logout.js' %}"></script>
+</body>
+</html>
+

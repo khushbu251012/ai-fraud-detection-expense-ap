@@ -1,0 +1,65 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #c1dcf0;
+    padding: 40px;
+  }
+  
+  .budget-container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    color: #2980b9;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input, button {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #27ae60;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1e8449;
+  }
+  
+  .budget-summary {
+    margin-top: 30px;
+    text-align: left;
+    background: #f0f9ff;
+    padding: 20px;
+    border-radius: 10px;
+    color: #2c3e50;
+  }
+  
+  #budget-status {
+    font-weight: bold;
+  }
+  
+  .summary-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }

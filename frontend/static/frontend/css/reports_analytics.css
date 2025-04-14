@@ -1,0 +1,49 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #c1dcf0;
+    padding: 40px;
+  }
+  
+  .report-container {
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  .charts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .chart-box {
+    flex: 1;
+    min-width: 400px;
+  }
+  
+  button#download-report {
+    display: block;
+    margin: 40px auto 0;
+    background: #2ecc71;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button#download-report:hover {
+    background: #27ae60;
+  }
+  
