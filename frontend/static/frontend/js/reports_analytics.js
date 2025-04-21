@@ -82,7 +82,7 @@ async function loadReports() {
 
       // 📈 Monthly Table
       y += 10;
-      doc.text("Monthly Trend:", 20, y);
+      doc.text("Monthly Spent:", 20, y);
       y += 10;
       doc.text("Month", 25, y);
       doc.text("Amount (Rs.)", 120, y);

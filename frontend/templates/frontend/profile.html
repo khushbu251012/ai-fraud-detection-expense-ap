@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  <link rel="stylesheet" href="{% static 'frontend/css/profile.css' %}">
+</head>
+<body>
+  <div class="profile-container">
+    <h2>Update Your Profile</h2>
+    <form id="profile-form">
+      <label>Username:</label>
+      <input type="text" id="username" required /><br />
+    
+      <label>Email:</label>
+      <input type="email" id="email" required /><br />
+    
+      <label>New Password:</label>
+      <input type="password" id="password" placeholder="Leave blank to keep same" /><br />
+    
+      <button type="submit">Update Profile</button>
+    </form>
+    
+    <button id="logout-btn" class="logout-button">Logout</button>
+    
+    <script src="{% static 'frontend/js/profile.js' %}"></script>    
+  </div>
+</body>
+</html>
